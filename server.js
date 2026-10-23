@@ -248,7 +248,7 @@ req.session.regenerate((error) => {
 
         app.listen(PORT, () => {
             console.log(
-                `Muscle Forest Gym running at http://localhost:${PORT}`
+                `Gym Website Template running at http://localhost:${PORT}`
             );
         });
     } catch (error) {
