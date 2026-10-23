@@ -16,6 +16,14 @@ const PORT = process.env.PORT || 3000;
 
 const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017';
 const DB_NAME = 'gymWebsiteTemplate';
+if (
+    !process.env.MONGO_URL ||
+    !process.env.ADMIN_USERNAME ||
+    !process.env.ADMIN_PASSWORD ||
+    !process.env.SESSION_SECRET
+) {
+    throw new Error('Missing required environment variables in .env');
+}
 
 const client = new MongoClient(MONGO_URL);
 
@@ -28,7 +36,7 @@ app.use(session({
 
     store: MongoStore.create({
         mongoUrl: MONGO_URL,
-        dbName: 'muscleForestGym',
+        dbName: DB_NAME,
         collectionName: 'sessions',
         ttl: 60 * 60
     }),
