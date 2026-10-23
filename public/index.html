@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Gym Name</title>
+    <link rel="icon" type="image/png" href="/MFGfavicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Your Gym Name
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="join-btn">
+                Join Now
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Build Your Dream Body With Muscle Forest
+            </h1>
+
+            <p>
+                Transform your fitness journey with expert trainers,
+                modern equipment, and personalized workout plans.
+            </p>
+
+            <button class="hero-btn">
+                Start Today
+            </button>
+
+            <button class="secondary-btn">
+                Explore Programs
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS SECTION ================= -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+            <h2>200+</h2>
+            <p>Happy Members</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>2</h2>
+            <p>Expert Trainers</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>2.5+</h2>
+            <p>Years Business</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>100%</h2>
+            <p>Dedication</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="gym3.png" alt="Your Gym Name">
+        </div>
+
+        <div class="about-content">
+
+            <h4>ABOUT US</h4>
+
+            <h2>
+                Build Your Body & <br>
+                Achieve Your Fitness Goals
+            </h2>
+
+            <p>
+                At Muscle Forest, we provide modern strength and cardio equipment,
+                experienced trainers, and personalized workout sessions
+                to help you achieve your fitness goals.
+            </p>
+
+            <div class="about-feature">
+
+                <div class="feature">
+                    ✅ Strength Training
+                </div>
+
+                <div class="feature">
+                    ✅ Cardio Equipment
+                </div>
+
+                <div class="feature">
+                    ✅ Personal Training
+                </div>
+
+                <div class="feature">
+                    ✅ Friendly Environment
+                </div>
+
+            </div>
+
+            <button type="button" class="about-btn"
+        onclick="toggleProgramDetails(this)">
+    Learn More →
+</button>
+
+<div class="program-details" hidden>
+    <p>
+        At Your Gym Name, we focus on helping every member
+        build strength, improve endurance, and maintain a healthy
+        lifestyle. Our training environment supports beginners
+        as well as experienced fitness enthusiasts.
+    </p>
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROGRAMS SECTION ================= -->
+
+    <section class="programs" id="programs">
+
+        <div class="programs-heading">
+
+            <h4>OUR PROGRAMS</h4>
+
+            <h2>
+                Train Hard. Get Stronger.
+            </h2>
+
+            <p>
+                Choose the right training program and take your fitness
+                journey to the next level.
+            </p>
+
+        </div>
+
+
+        <div class="program-cards">
+
+            <!-- Strength Training -->
+
+            <div class="program-card">
+
+                <h3>
+                    Strength Training
+                </h3>
+
+                <p>
+                    Build strength and muscle with modern equipment
+                    and effective workout routines.
+                </p>
+
+                <a href="#" class="learn-more-btn" onclick="toggleProgramDetails(this); return false;">
+    Learn More →
+</a>
+
+<div class="program-details" hidden>
+    <h4>Strength Training Benefits</h4>
+    <ul>
+        <li>Build muscle and increase strength</li>
+        <li>Improve overall fitness and stamina</li>
+        <li>Learn proper weightlifting techniques</li>
+        <li>Follow structured workout routines</li>
+    </ul>
+</div>
+
+            </div>
+
+
+            <!-- Cardio Training -->
+
+            <div class="program-card">
+
+                <h3>
+                    Cardio Training
+                </h3>
+
+                <p>
+                    Improve your stamina, endurance, and overall fitness
+                    with our cardio equipment.
+                </p>
+
+                
+<button class="program-btn" type="button" onclick="toggleProgramDetails(this)">
+    Learn More →
+</button>
+
+<div class="program-details" id="cardio-details" hidden>
+    <strong>Cardio Training Benefits</strong>
+    <ul>
+        <li>Improve stamina and endurance</li>
+        <li>Support heart health and fitness</li>
+        <li>Burn calories and improve conditioning</li>
+        <li>Build a consistent cardio routine</li>
+    </ul>
+</div>
+
+            </div>
+
+
+            <!-- Personal Training -->
+
+            <div class="program-card">
+
+                <h3>
+                    Personal Training
+                </h3>
+
+                <p>
+                    Get personalized workout guidance from our experienced
+                    trainers to achieve your fitness goals.
+                </p>
+
+                
+<button class="program-btn" type="button" onclick="toggleProgramDetails(this)">
+    Learn More →
+</button>
+
+<div class="program-details" id="personal-details" hidden>
+    <strong>Personal Training Benefits</strong>
+    <ul>
+        <li>Individual attention from a trainer</li>
+        <li>Workout plans based on your goals</li>
+        <li>Guidance on exercise technique</li>
+        <li>Track progress and improve consistency</li>
+    </ul>
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEMBERSHIP SECTION ================= -->
+
+    <section class="membership" id="membership">
+
+        <div class="membership-heading">
+
+            <h4>
+                MEMBERSHIP PLANS
+            </h4>
+
+            <h2>
+                Choose Your Membership
+            </h2>
+
+            <p>
+                Simple and affordable membership plans designed to help you
+                stay fit and achieve your fitness goals.
+            </p>
+
+        </div>
+
+
+        <div class="membership-cards">
+
+            <!-- 1 Month -->
+
+            <div class="membership-card">
+
+                <h3>
+                    1 Month
+                </h3>
+
+                <h2>
+                    ₹999
+                </h2>
+
+                <p>
+                    Perfect for getting started with your fitness journey.
+                </p>
+
+                <a href="#contact" class="membership-btn" data-plan="1-month">
+                    Join Now
+                </a>
+
+            </div>
+
+
+            <!-- 3 Months -->
+
+            <div class="membership-card popular">
+
+                <span>
+                    Best Value
+                </span>
+
+                <h3>
+                    3 Months
+                </h3>
+
+                <h2>
+                    ₹2,499
+                </h2>
+
+                <p>
+                    Save more and stay committed to your fitness goals.
+                </p>
+
+                <a href="#contact" class="membership-btn" data-plan="3-months">
+                    Join Now
+                </a>
+
+            </div>
+
+
+            <!-- 1 Year -->
+
+            <div class="membership-card">
+
+                <h3>
+                    1 Year
+                </h3>
+
+                <h2>
+                    ₹ 10,999
+                </h2>
+
+                <p>
+                    Get full access to the gym for an entire year and save more.
+                </p>
+
+                <a href="#contact" class="membership-btn" data-plan="1-year">
+                    Join Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+
+        <h4>GET IN TOUCH</h4>
+
+        <h2>Ready to Start Your Fitness Journey?</h2>
+
+        <p>
+            Have questions about membership or personal training?
+            Get in touch with us today.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                Visit Muscle Forest and take the first step
+                towards a stronger and healthier you.
+            </p>
+
+            <div class="contact-detail">
+                📞 Phone: +91 XXXXXXXXXX
+            </div>
+
+            <div class="contact-detail">
+                📍 Location: B-219, Shiv Mandir Main Rd, GD Colony, Block B, Mayur Vihar Phase III, Delhi, 110096
+            </div>
+
+            <div class="contact-detail">
+                🕒 Mon - Sat: 5:30 AM - 11:00 PM
+            </div>
+
+            <div class="contact-detail">
+                🕒 Sunday: 10:00 AM - 2:00 PM
+            </div>
+
+        </div>
+
+
+        <form class="contact-form">
+
+            <input 
+                type="text" 
+                placeholder="Your Name"
+                required
+            >
+
+            <input 
+                type="tel" 
+                placeholder="Phone Number"
+                required
+            >
+
+            <select id="membership-plan" name="plan" required>
+
+                <option value="">
+                    Select Membership Plan
+                </option>
+
+                <option value="1-month">
+                    1 Month - ₹999
+                </option>
+
+                <option value="3-months">
+                    3 Months - ₹2,499
+                </option>
+
+                <option value="1-year">
+                    1 Year - ₹10,999
+                </option>
+
+            </select>
+
+            <textarea 
+                placeholder="Your Message"
+                rows="5"
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+            <p class="success-message" id="successMessage"></p>
+        </form>
+
+    </div>
+
+</section>
+  <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h2>Your Gym Name</h2>
+            <p>
+                Build your body, improve your strength, and achieve
+                your fitness goals with Your Gym Name.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#membership">Membership</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>📞 +91 XXXXXXXXXX</p>
+            <p>📍 B-219, Shiv Mandir Main Rd, GD Colony, Block B, Mayur Vihar Phase III, Delhi, 110096</p>
+            <p>✉️ gym@example.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Your Gym Name. All Rights Reserved.</p>
+    </div>
+
+</footer>
+      <script src="script.js"></script>
+</body>
+
+</html>
